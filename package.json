@@ -4,7 +4,7 @@
   "description": "This is a testing node project",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec",
+    "test": "node app/server.js & mocha --reporter spec & npx -y kill-port 3000",
     "start": "node app/server.js"
   },
   "repository": {
